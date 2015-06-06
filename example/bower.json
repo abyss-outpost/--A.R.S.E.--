@@ -1,0 +1,16 @@
+{
+  "name"          : "FEARS",
+  "version"       : "0.1",
+  "main"          : "public/index.html",
+  "ignore"        : [
+                      "**/.*",
+                      "libs"
+                    ],
+  "dependencies"  : {
+                      "angular"           : "1.4.0-rc.2",
+                      "requirejs"         : "latest",
+                      "requirejs-domready": "latest",
+                      "systemjs"          : "latest",
+                      "es6-module-loader" : "latest"
+                    }
+}
