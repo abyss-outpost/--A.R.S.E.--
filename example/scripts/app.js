@@ -7,6 +7,6 @@ const                     dependencies = []                                  ;
 
 const                              App = angular.module(appName,dependencies);
 
-                            App.service('Data', Data)                        ;
-                         App.controller('controllerName', controllerName)    ;
-											angular.bootstrap(document, [appName])                 ;
+                            App.service('Data',                         Data);
+                         App.controller('controllerName',     controllerName);
+											angular.bootstrap(document,                  [appName]);
