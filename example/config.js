@@ -1,0 +1,1 @@
+scripts/configuration/config.js
