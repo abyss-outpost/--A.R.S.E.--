@@ -1,4 +1,5 @@
 System.config({
+  "baseURL": "/",
   "transpiler": "traceur",
   "paths": {
     "*": "*.js",
@@ -9,11 +10,12 @@ System.config({
 
 System.config({
   "map": {
-    "angular": "npm:angular@1.4.0",
+    "angular": "github:angular/bower-angular@1.4.0",
+    "es6-module-loader": "npm:es6-module-loader@0.17.0",
     "requirejs": "npm:requirejs@2.1.18",
     "systemjs": "npm:systemjs@0.17.1",
-    "traceur": "github:jmcriffey/bower-traceur@0.0.88",
-    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
+    "traceur": "github:jmcriffey/bower-traceur@0.0.90",
+    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.90",
     "github:jspm/nodelibs-path@0.1.0": {
       "path-browserify": "npm:path-browserify@0.0.0"
     },
@@ -66,4 +68,3 @@ System.config({
     }
   }
 });
-
