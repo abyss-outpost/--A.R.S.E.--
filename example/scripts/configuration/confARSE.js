@@ -32,7 +32,7 @@ var				 both_selected = NOT_SELECTED      ;
 
 var               startSystemJS
                                 = function() {
-
+console.log('uhoh');
 System.import('~/scripts/configuration/confangularbysystem').catch(console.error.bind(console));
 
                                              }
@@ -43,6 +43,7 @@ var             startRequireJS
 // SystemJS comes with RequireJS built in! lol
 // Oh well, maybe we'll reinvent the wheel
 // for fun.
+console.log('Starting require');
 System.import('~/scripts/configuration/confangularbyrequire').catch(console.error.bind(console));
                                              }
 /*********************************************
