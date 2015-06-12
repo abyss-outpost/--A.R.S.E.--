@@ -12,18 +12,15 @@
 //
 // ]);
 // console.log("Hearing chinese in a sushi place");
-console.log('Reached confrequire');
-if (typeof define !== 'function') {
-  console.log(define);
-  var define = require('amdefine')(module);
-}
-console.log('Post typeof');
+
 define({
-  baseUrl: '/',
+  baseUrl: '/scripts',
 
   paths: {
-    'angular' : '/jspm_packages/github/angular/bower-angular@1.4.0/angular.js'
-
+    'angular' : '/jspm_packages/github/angular/bower-angular@1.4.0/angular.js',
+    'reqyreA' : '/scripts/configuration/requireapp.js',
+    'launchR' : '/scripts/configuration/launchrequire.js',
+    'control' : '/scripts/controllers/controllerName.js'
   },
 
   shim: {

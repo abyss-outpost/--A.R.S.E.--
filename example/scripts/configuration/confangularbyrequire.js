@@ -1,34 +1,24 @@
-System.config({
-  meta: {
-    '~/scripts/configuration/configangularbyrequire.js': {
-      format: 'amd'
-    }
-  }
-});
+// System.config({
+//   meta: {
+//     '~/scripts/configuration/configangularbyrequire.js': {
+//       format: 'cjs'
+//     }
+//   }
+// });
+// configure require
 window.define = System.amdDefine;
 window.require = window.requirejs = System.amdRequire;
+console.log(require);
+System.config('/scripts/configuration/confrequire');
 
-define({
-  baseUrl: '/',
-
-  paths: {
-    'angular' : '/jspm_packages/github/angular/bower-angular@1.4.0/angular.js'
-
-  },
-
-  shim: {
-    'angular' : {
-      'exports' : 'angular'
-    }
-  }
+// move this to another file. works ok
+window.angMod = null;
+define(['angular'], function (angular) {
+  'use strict';
+  console.log('Welcome my son, to the Machine');
+  //angMod =
+  angular.module('app', []);
+  //console.log(angMod);
+  // Now I just need to launch it
+  //angular.bootstrap(document, ['/scripts/controllers/controllerName.js']);
 });
-
-// define([
-//   'angular',
-//   '/scripts/requireapp'
-// ], function (angular) {
-//   'use strict';
-//
-//
-//   angular.bootstrap(document, ['app']);
-// })

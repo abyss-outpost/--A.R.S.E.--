@@ -44,6 +44,19 @@ var             startRequireJS
 // Oh well, maybe we'll reinvent the wheel
 // for fun.
 console.log('Starting require');
+System.config({
+  meta: {
+    '~/scripts/configuration/configangularbyrequire.js': {
+      format: 'cjs'
+    },
+    '~/scripts/configuration/confrequire.js': {
+      format: 'cjs'
+    },
+    '~/scripts/configuration/requireapp.js': {
+      format: 'cjs'
+    }
+  }
+});
 System.import('~/scripts/configuration/confangularbyrequire').catch(console.error.bind(console));
                                              }
 /*********************************************
