@@ -10,7 +10,7 @@
                       "angular"           : "1.4.0-rc.2",
                       "requirejs"         : "latest",
                       "requirejs-domready": "latest",
-                      "systemjs"          : "latest",
+                      "system.js"         : "latest",
                       "es6-module-loader" : "latest"
                     }
 }

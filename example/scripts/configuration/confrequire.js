@@ -13,19 +13,22 @@
 // ]);
 // console.log("Hearing chinese in a sushi place");
 
-define({
-  baseUrl: '/scripts',
+define(
+                                                                               {
+        "baseUrl": '/',
+        "transpiler": "/jspm_packages/github/jmcriffey/bower-traceur@0.0.90.js",
+        "paths"  :                                                               {
 
-  paths: {
-    'angular' : '/jspm_packages/github/angular/bower-angular@1.4.0/angular.js',
-    'reqyreA' : '/scripts/configuration/requireapp.js',
-    'launchR' : '/scripts/configuration/launchrequire.js',
-    'control' : '/scripts/controllers/controllerName.js'
-  },
+     'angular' : '/bower_components/angular/angular.js'                        ,
+     'contro1' : '/scripts/controllers/controllerName.js'                     ,
+     'traceur' : '/jspm_packages/github/jmcriffey/bower-traceur@0.0.90.js'
 
-  shim: {
-    'angular' : {
-      'exports' : 'angular'
-    }
-  }
-});
+                                                                               },
+          "shim" :                                                               {
+
+     'angular' :                                                               {
+     'exports' : 'angular'
+
+                                                                               }                                                                               }
+                                                                               }
+      );

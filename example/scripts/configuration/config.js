@@ -10,7 +10,7 @@ System.config({
 
 System.config({
   "map": {
-    "angular": "github:angular/bower-angular@1.4.0",
+    "angular": "npm:angular@1.4.0",
     "es6-module-loader": "npm:es6-module-loader@0.17.0",
     "requirejs": "npm:requirejs@2.1.18",
     "systemjs": "npm:systemjs@0.17.1",

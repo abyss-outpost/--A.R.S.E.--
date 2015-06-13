@@ -33,7 +33,7 @@ var				 both_selected = NOT_SELECTED      ;
 var               startSystemJS
                                 = function() {
 console.log('uhoh');
-System.import('~/scripts/configuration/confangularbysystem').catch(console.error.bind(console));
+System.import('/scripts/configuration/confangularbysystem.js').catch(console.error.bind(console));
 
                                              }
 var             startRequireJS
@@ -57,7 +57,7 @@ System.config({
     }
   }
 });
-System.import('~/scripts/configuration/confangularbyrequire').catch(console.error.bind(console));
+System.import('/scripts/configuration/confangularbyrequire.js').catch(console.error.bind(console));
                                              }
 /*********************************************
 * Here is where your selection is executed   *
