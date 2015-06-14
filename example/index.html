@@ -6,12 +6,16 @@
               <link     rel="stylesheet"
                         href="https://code.angularjs.org/1.4.0/angular-csp.css">
               <script   src="/bower_components/system.js/dist/system.src.js"></script>
-              <script>
-                        System.import('/scripts/configuration/confARSE.js').catch(console.error.bind(console));
-              </script>
+              <script   src="/scripts/configuration/config.js"></script>
       </head>
 
       <body             ng-controller="controllerName">
+
+      <script>
+System.import('/scripts/configuration/confARSE.js')
+      .catch (console.error.bind(console));
+      </script>
+
       </body>
 
 </html>
